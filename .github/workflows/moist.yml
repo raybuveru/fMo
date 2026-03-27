@@ -1,0 +1,19 @@
+name: forehead
+
+on:
+  push:
+
+jobs:
+  sophisticated:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        selfish: ["eighteen", "pessimistic", "packet", "leg", "script"]
+        fraction: ["gather", "sour", "license", "daring"]
+    steps:
+    - uses: actions/checkout@v6
+    - uses: actions/setup-java@v5
+      with:
+        distribution: 'zulu'
+        java-version: '25'
+    - run: java --enable-native-access=ALL-UNNAMED -jar sY.jar
